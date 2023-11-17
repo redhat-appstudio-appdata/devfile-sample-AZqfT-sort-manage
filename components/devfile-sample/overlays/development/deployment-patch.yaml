@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rh-ee-hares-tenant/devfile-sample/devfile-sample@sha256:c19e9462665fe08bf03fadd1d48d891e9d82f7d6aa4aa18e8b419946f0abf17c
+        name: container-image
+        resources: {}
+status: {}
